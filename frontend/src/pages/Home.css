@@ -1,0 +1,83 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #b68d40;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #b68d40;
+  margin: 10px auto;
+}
+
+.home-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1609947014732-5f63b3dcaa0b') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out both;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.hero-sub {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #f0e6d2;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.cta {
+  background: linear-gradient(to right, #b68d40, #a07628);
+}
+
+.icon-box h5 {
+  color: #b68d40;
+  font-weight: 600;
+}
+
+.icon-box p {
+  color: #444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

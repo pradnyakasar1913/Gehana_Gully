@@ -1,0 +1,71 @@
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.brand-logo {
+  font-size: 1.8rem;
+  color: #b68d40 !important;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  color: #9a732d !important;
+  transform: scale(1.05);
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.nav-link-custom {
+  margin-left: 20px;
+  color: #333 !important;
+  font-weight: 500;
+  position: relative;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #b68d40;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.nav-link-custom:hover {
+  color: #b68d40 !important;
+}
+
+.custom-toggler {
+  border: none;
+  background: transparent;
+}
+
+.active-nav {
+  color: #b68d40 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #b68d40;
+}

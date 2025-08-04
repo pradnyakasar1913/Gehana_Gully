@@ -1,0 +1,47 @@
+.contact-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://images.unsplash.com/photo-1612336307425-8d01f6a7e380') center/cover no-repeat;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #b68d40;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #b68d40;
+  margin-top: 8px;
+}
+
+.contact-info li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact-form .form-label {
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  border-radius: 0.5rem;
+}
+
+.contact-form .btn {
+  background-color: #b68d40;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #a07a32;
+}
